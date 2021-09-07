@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>TinyFeet</title>
+  </head>
+  <body>
+    <header>
+      <div class="leftDiv">
+          
+        <ul>
+          <li><a href="#home" class="tinyfeet"><strong>TinyFeet</strong></a></li>
+          <li><a href="#news">ABOUT</a></li>
+          <li><a href="#contact">PRODUCTS</a></li>
+          <li><a href="#about">BLOGS</a></li>
+        </ul>
+      </div>
+      <div class="rightDiv">
+          
+        <button class="btnsignup btnright" >SIGN UP</button>
+        <button class="btnlogin btnright" onclick="openForm()">LOG IN</button>
+        <a href="#" class="hamburger btnright"> &#9776; </a>
+          
+        
+      </div>
+    </header>
+
+    <div class="content">
+      <div class="image">
+          <img src="momson.jpg" alt="photo" class="momImg">
+
+      </div>
+      
+          <div class="para">
+        <p>The best way to make
+        your baby healthy is to
+        make them happy!<button class="read" >Read More</button>
+    </p>
+      </div>
+    </div>
+
+    <div class="form-popup" id="myForm">
+        <form class="form-container">
+          <h1>Login</h1>
+      
+          <label for="email"><b>Email/PhoneNumber</b></label>
+          <input type="text" placeholder="Enter Email or PhoneNumber" name="email" required>
+      
+          <button type="submit" class="btn">Login</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+      <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+        </script>      
+    
+  </body>
+</html>
